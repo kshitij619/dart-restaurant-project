@@ -33,6 +33,10 @@ class MyRestaurantService {
       // Removing items
       cart[menu] = cart[menu]! > 0 ? cart[menu]! - 1 : 0;
     }
+
+    if (cart[menu] == 0) {
+      cart.remove(menu);
+    }
   }
 
   int? getQuantity(MenuModel menu) => cart[menu];
