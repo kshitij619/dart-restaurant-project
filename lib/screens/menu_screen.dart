@@ -44,5 +44,8 @@ void menuScreen() {
     service.addMenuToCart(input ?? 999);
   }
 
-  print('End');
+  service.generateBill();
+
+  service.payBill();
+  print('');
 }
