@@ -9,11 +9,11 @@ class CategoryModel {
     required this.description,
   });
 
-  factory CategoryModel.fromMap(Map<String, dynamic> map) {
+  factory CategoryModel.fromMap(Map<String, dynamic> jkb) {
     return CategoryModel(
-      categoryId: map['categoryId'] as int,
-      categoryName: map['categoryName'] as String,
-      description: map['description'] as String,
+      categoryId: jkb['categoryId'] as int,
+      categoryName: jkb['categoryName'] as String,
+      description: jkb['description'] as String,
     );
   }
 }

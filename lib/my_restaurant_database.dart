@@ -57,7 +57,11 @@ class MyRestaurantDatabase {
       'description':
           'Pasta is a staple food in many countries and is often associated with Italian cuisine'
     },
-    3: {'categoryId': 3, 'categoryName': 'Drink', 'description': ''},
+    3: {
+      'categoryId': 3,
+      'categoryName': 'Drink',
+      'description': '',
+    },
   };
 
   Map<String, dynamic>? findValueById(int id) {

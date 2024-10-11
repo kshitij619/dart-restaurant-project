@@ -54,7 +54,7 @@ class MyRestaurantService {
     for (int i = 0; i < cart.length; i++) {
       final price = quantityList[i] * itemList[i].price;
       print(
-          '${'${quantityList[i]}'.yellow.padRight(20)}${itemList[i].name.magenta.padRight(28)}${'${price}'.green}');
+          '${'${quantityList[i]}'.yellow.padRight(20)}${itemList[i].name.magenta.padRight(28)}${'$price'.green}');
     }
     print(''.padRight(40, '-'));
 
